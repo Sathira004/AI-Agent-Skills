@@ -1,129 +1,65 @@
-# 🚀 AI Agent Skills
+# AI Agent Skills
 
-A curated collection of modular AI agent skills designed to extend agent capabilities with reusable, task-specific intelligence.
+> A focused skill library for secure API review, built around OWASP guidance and practical remediation patterns.
 
-> Think of this repository as a skill library for AI agents — plug, play, and scale intelligent workflows.
+## Overview
 
----
+This repository currently ships one curated skill: an OWASP-focused assistant for reviewing APIs, identifying security weaknesses, and shaping safer design decisions.
 
-## 📌 About
+### What this skill helps with
 
-AI agent skills are structured capability bundles (instructions + tools + workflows) that enable agents to perform specialized tasks more effectively.
+- API security review
+- OWASP Top 10 risk identification
+- Authentication and authorization checks
+- Input validation and injection defenses
+- Rate limiting, logging, and sensitive data handling
+- Secure API design and remediation advice
 
-This repository aims to:
-- Provide reusable agent skills
-- Standardize skill structure
-- Promote secure and scalable AI workflows
+## Featured Skill
 
----
+<table>
+	<tr>
+		<td><strong>OWASP Secure API</strong></td>
+		<td>Security-first guidance for reviewing endpoints, auth flows, data handling, and common API attack surfaces.</td>
+	</tr>
+</table>
 
-## 🧠 Available Skills
+Primary instructions live in [owasp-secure-api-skill/SKILL.md](owasp-secure-api-skill/SKILL.md).
 
-### 🔐 OWASP Secure API
+Supporting references:
+- [owasp-secure-api-skill/references/owasp-top10.md](owasp-secure-api-skill/references/owasp-top10.md)
+- [owasp-secure-api-skill/references/secure-api.md](owasp-secure-api-skill/references/secure-api.md)
 
-A security-focused AI agent skill designed to:
-- Identify API vulnerabilities
-- Enforce OWASP best practices
-- Improve secure API development workflows
+## Repository Structure
 
-**Key Features:**
-- API security analysis
-- Vulnerability detection guidance
-- Best practice enforcement (OWASP Top 10)
-- Secure coding recommendations
-
----
-
-## 📂 Repository Structure
-
-```
+```text
 .
-├── skills/
-│   └── owasp-secure-api/
-│       ├── SKILL.md
-│       ├── examples/
-│       └── resources/
 ├── README.md
+└── owasp-secure-api-skill/
+    ├── SKILL.md
+    └── references/
+        ├── owasp-top10.md
+        └── secure-api.md
 ```
 
----
+## How to Use
 
-## ⚡ Getting Started
+1. Load [owasp-secure-api-skill/SKILL.md](owasp-secure-api-skill/SKILL.md) as the main instruction source.
+2. Use [owasp-secure-api-skill/references/owasp-top10.md](owasp-secure-api-skill/references/owasp-top10.md) when the task is vulnerability-focused.
+3. Use [owasp-secure-api-skill/references/secure-api.md](owasp-secure-api-skill/references/secure-api.md) when the task is about API design, auth, validation, rate limiting, or response handling.
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/your-username/ai-agent-skills.git
-cd ai-agent-skills
-```
+## Design Intent
 
-### 2. Add skills to your agent
-Place skills inside:
-```
-.github/skills/
-```
+The README is intentionally minimal and high-signal:
+- Clear first impression
+- Quick path to the skill files
+- Accurate structure that matches the repository
+- Easy to extend if more skills are added later
 
-### 3. Load and use
-Integrate with your AI agent framework (e.g., LangChain, CrewAI, etc.)
+## Contributing
 
----
+Keep updates aligned with the actual repo layout and the skill’s current behavior. If you add more skills, expand the featured section and update the structure block.
 
-## 🛠️ How to Create a Skill
+## License
 
-1. Create a new folder:
-```
-skills/your-skill-name/
-```
-
-2. Add a `SKILL.md` file
-
-3. Define:
-- Name
-- Description
-- Instructions
-- Tools (optional)
-
-4. Add supporting resources if needed
-
----
-
-## 🌍 Vision
-
-To build a universal marketplace of AI agent skills where developers can:
-- Share reusable intelligence
-- Build smarter agents faster
-- Standardize agent capabilities across platforms
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome!
-
-Steps:
-1. Fork the repo
-2. Create a new branch
-3. Submit a pull request
-
----
-
-## 📜 License
-
-MIT License
-
----
-
-## ⭐ Support
-
-If you find this useful:
-- Star the repository
-- Fork it
-- Share it with others
-
----
-
-## 🔮 Coming Soon
-
-- More security skills  
-- DevOps agent skills  
-- AI automation workflows  
-- Skill marketplace integration  
+MIT
